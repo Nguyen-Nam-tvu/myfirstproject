@@ -1,0 +1,80 @@
+/* Thiết lập chung */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full màn hình */
+}
+
+/* Ô A: Tiêu đề */
+.box-a {
+    background-color: #d32f2f; /* Màu đỏ Tết */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid #ffca28;
+}
+
+/* Phần giữa chứa B và C */
+.middle-section {
+    display: flex;
+    flex: 1; /* Tự động giãn rộng phần giữa */
+}
+
+/* Ô B: Menu */
+.box-b {
+    width: 150px; /* Độ rộng ô B */
+    background-color: #fff176;
+    padding: 12px;
+    border-right: 2px solid #ccc;
+}
+
+.box-b ul {
+    list-style: none;
+    padding: 0;
+}
+
+.box-b li {
+    margin-bottom: 10px;
+}
+
+.box-b a {
+    text-decoration: none;
+    color: #b71c1c;
+    font-weight: bold;
+    display: block;
+    padding: 8px;
+    border: 1px solid #d32f2f;
+    border-radius: 5px;
+}
+
+.box-b a:hover {
+    background-color: #d32f2f;
+    color: white;
+}
+
+/* Ô C: Nội dung */
+.box-c {
+    flex: 1; /* Ô C chiếm toàn bộ phần còn lại */
+    background-color: red;
+}
+
+.box-c iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Ô D: Thông tin cá nhân */
+.box-d {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 10px;
+}
